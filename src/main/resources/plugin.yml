@@ -1,0 +1,11 @@
+name: StrawCosmetics
+version: 0.0.1
+api-version: 1.18
+authors:
+  - Eclixal
+  - Uicias
+main: bzh.strawberrycorps.cosmetics.StrawCosmetics
+description: Cosmetics plugin provided to you by Strawberrycorps. It includes awesomes features like Title or particles.
+commands:
+  todo:
+    description: skeleton
