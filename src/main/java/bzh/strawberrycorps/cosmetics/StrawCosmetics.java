@@ -29,9 +29,9 @@ public class StrawCosmetics extends JavaPlugin {
         log.info("######################## [StrawCosmetics - " + getDescription().getVersion() + "] #################################");
         log.info("######################## [Plugin by - " + Arrays.toString(this.getDescription().getAuthors().toArray()) + "] #################################");
 
-        log.info("Started loading titles");
+        log.info("Started loading titles.");
         titleManager = TitleManager.getInstance();
-        log.info("Loaded titles");
+        log.info("Loaded titles.");
 
         log.info("Plugin enabled in " + (System.currentTimeMillis() - begin) + " ms.");
         log.info("######################## [StrawCosmetics - " + getDescription().getVersion() + "] #################################");
