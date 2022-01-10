@@ -10,9 +10,10 @@ import java.util.Arrays;
 /**
  * This file StrawCosmetics is part of a project StrawTitles.
  * It was created on 10/01/2022 18:30 by Eclixal and Uicias.
- * This file as the whole project shouldn't be modify by others without the express permission from StrawberryCorps author(s).
- * Also this comment shouldn't get remove from the file. (see Licence)
+ * This file as the whole project shouldn't be modified by others without the express permission from StrawberryCorps author(s).
+ * Also, this comment shouldn't get remove from the file. (see Licence)
  */
+
 @Log4j
 public class StrawCosmetics extends JavaPlugin {
 
