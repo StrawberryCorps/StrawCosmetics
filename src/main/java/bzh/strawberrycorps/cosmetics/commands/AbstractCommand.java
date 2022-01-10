@@ -1,5 +1,6 @@
 package bzh.strawberrycorps.cosmetics.commands;
 
+import lombok.extern.log4j.Log4j;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -8,9 +9,10 @@ import org.bukkit.plugin.Plugin;
 /**
  * This file AbstractCommand is part of a project StrawTitles.
  * It was created on 10/01/2022 18:38 by Eclixal.
- * This file as the whole project shouldn't be modify by others without the express permission from StrawberryCorps author(s).
- * Also this comment shouldn't get remove from the file. (see Licence)
+ * This file as the whole project shouldn't be modified by others without the express permission from StrawberryCorps author(s).
+ * Also, this comment shouldn't get remove from the file. (see Licence)
  */
+@Log4j
 public abstract class AbstractCommand implements CommandExecutor {
 
     protected final Plugin plugin;
@@ -24,6 +26,7 @@ public abstract class AbstractCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (!commandSender.isOp() && !commandSender.hasPermission(this.permission)) {
+            log.info(String.format("[%s] has issued command [%s] without permission [%s]", commandSender.getName(), command.getName(), this.permission));
             commandSender.sendMessage("§cYou don't have permission to execute this command (REQUIRE_{permission})".replace("{permission}", permission.toUpperCase()));
             return false;
         }
